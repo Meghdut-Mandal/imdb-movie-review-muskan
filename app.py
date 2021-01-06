@@ -50,10 +50,10 @@ def result():
     
         return render_template('results.html', value=prediction, id=id)
 
-@app.route('/reviews.html')
-def reviews():
+@app.route('/data.html')
+def data():
     movieReview = conn.execute('SELECT * FROM movieReview').fetchall()
-    return render_template('reviews.html', posts=movieReview)
+    return render_template('data.html', posts=movieReview)
 
 @app.route('/thanks.html')
 def thanks():
