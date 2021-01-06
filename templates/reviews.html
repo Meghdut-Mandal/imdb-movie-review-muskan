@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <center> <h3 style="color: white;"><u> {% block title %}Reviews {% endblock %}</h3> </u></center>
+    <hr>
+    {% for post in posts %}
+        <p style="color: white;">  {{ post['ID'] }} - {{ post['Review'] }} </p>
+        <span class="badge badge-primary" style="margin:auto; float:right; margin-top:-3%">{{ post['Prediction'] }}</span>
+        
+
+    {% endfor %}
+{% endblock %}
