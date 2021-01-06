@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% block content %} 
+<div class="col-md-3">
     <div class="row">
       <form action = "https://imdbmoviereview.herokuapp.com/results.html" method="POST">
           <label for="movie-review" style="color:wheat;"><center>Give your honest opinion... </center></label>
@@ -7,4 +8,5 @@
           <center><button class="btn btn-primary" type="submit", value="submit" style="margin: 1%; padding: 1%; float:inherit; color:white;">Submit</button>
           </center>      </form>
     </div>
+</div>
 {% endblock %}
