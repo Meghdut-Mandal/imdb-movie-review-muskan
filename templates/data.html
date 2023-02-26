@@ -18,61 +18,79 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
-    <style>
-        body {
-            background-image: linear-gradient(to bottom, #D3CCE3, #E9E4F0);
-            color: black;
-            text-align: center;
-            padding-top: 50px;
-        }
+   	<style>
+		body {
+			background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/4980.jpg"); /* add faded movie poster image */
+			background-size: cover;
+		}
 
-        table, th, td {
-            border: 1px solid black;
-        }
+		header {
+			color: white;
+			padding: 20px;
+			text-align: left;
+		}
 
-        .header {
-            background-color: white;
-            padding: 10px;
-        }
+		nav {
+			overflow: hidden;
+			padding: 20px;
+			text-align: center;
+		}
 
-        .navbar {
-            text-align: left;
-        }
+		nav a {
+			float: left;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+		}
 
-        .lilac1 {
-            background-color: #C8A2C8;
-            padding: 20px;
-        }
+		nav a:hover {
+			background-color: #7B68EE; /* hover effect color */
+		}
 
-        .lilac2 {
-            background-color: #E7DDEA;
-            padding: 20px;
-        }
+		.container {
+			margin: 20px auto;
+			width: 50%;
+			text-align: center;
+		}
 
-      table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-      padding: 5px;
-    }
-    th {
-      text-align: left;
-    }
-    .center {
-      margin: auto;
-      width: 50%;
-      text-align: center;
-    }
+		input[type=text] {
+    			width: 80%; /* Increase width to 80% */
+    			padding: 12px 20px;
+    			margin: 8px 0;
+    			box-sizing: border-box;
+    			border: 2px solid #ccc;
+    			border-radius: 4px;
+    			background-color: white;
+    			font-size: 16px;
+		}
 
-    </style>
+		input[type=submit] {
+			background-color: #4CAF50; /* submit button color */
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		input[type=submit]:hover {
+			background-color: #3e8e41; /* hover effect color */
+		}
+	</style>
 
 </head>
 <body>
-<div class="header">
-    <h2>Welcome To Sentiment Analyzer</h2>
-    <h3> Created by: Muskaan Walia | TLP-2023 </h3>
-    <h3> Course: Projects and Applications of Data Science </h3>
-    <h3> Professor: Alexander Fred Ojala | TA: Raghav Awasty </h3>
-</div>
+<header>
+		<h1>Welcome to Sentiment Analyzer</h1>
+		<h3>My name: Subandhu Agravanshi | TLP-2023 </h3>
+		<h3>Professor: Alexander Fred Ojala | TA: Raghav Awasty</h3>
+	</header>
 
 <h3 > Reviews </h3>
 <hr>
